@@ -26,8 +26,7 @@ var button = d3.select("#filter-btn");
 button.on("click", function() {
   // First deleting the old rows from table
   var table = document.getElementById("ufo-table");
-  for(var i = table.rows.length - 1; i > 0; i--)
-  {
+  for(var i = table.rows.length - 1; i > 0; i--) {
     table.deleteRow(i);
   }
 
